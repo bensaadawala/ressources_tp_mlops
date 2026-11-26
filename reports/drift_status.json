@@ -1,0 +1,7 @@
+{
+    "total_variables": 7,
+    "drifted_variables": 7,
+    "drift_percentage": 100.0,
+    "threshold": 30,
+    "drift_detected": true
+}
