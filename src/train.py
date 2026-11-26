@@ -85,7 +85,7 @@ def train_pipeline():
         print(f"Run ID : {run.info.run_id}")
         print(f"Métriques enregistrées : {metrics}")
         return metrics
-
+# Test de generation automatique d'une nouvelle version du modele
 
 if __name__ == "__main__":
     train_pipeline()
