@@ -29,3 +29,15 @@ jobs:
         run: |
           PYTHONPATH=. pytest -v tests/
 
+  build-docker:
+    runs-on: ubuntu-latest
+    needs: test-and-train
+
+    steps:
+      - name: Récupération du projet
+        uses: actions/checkout@v4
+
+      - name: Construction de l'image Docker
+        run: |
+          docker build -t credit-scoring-api:1.0 .
+
